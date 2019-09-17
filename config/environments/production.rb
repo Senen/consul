@@ -50,7 +50,7 @@ Rails.application.configure do
 
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  config.force_ssl = true
+  config.force_ssl = false
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
@@ -75,15 +75,15 @@ Rails.application.configure do
 
   # SMTP configuration to deliver emails
   # Uncomment the following block of code and add your SMTP service credentials
-  # config.action_mailer.delivery_method = :smtp
-  # config.action_mailer.smtp_settings = {
-  #   address:              "smtp.example.com",
-  #   port:                 587,
-  #   domain:               "example.com",
-  #   user_name:            "<username>",
-  #   password:             "<password>",
-  #   authentication:       "plain",
-  #   enable_starttls_auto: true }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              "smtp.gmail.com",
+    port:                 "587",
+    domain:               "gmail.com",
+    user_name:            "senenrodero@gmail.com",
+    password:             "lvufzbqrescozsqd",
+    authentication:       "plain",
+    enable_starttls_auto: true }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
